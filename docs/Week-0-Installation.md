@@ -158,6 +158,9 @@ Enter ".help" for usage hints.
 
 1. List all of the database tables currently in your database and what command you used to find them
 
+  /Users/Douglas/Desktop/Class_Materials/cmsc136/app/attendancechimp/db.sqlite r/w
+  Used .databases to find them
+
 ## Step 7. Modifying The Front-End (TODO)
 While we understand that this class is not a web-application design course, it will be valuable for you to understand how the front-end of the application interfaces with the python code. You will modify `templates/app/index.html` to have the following:
 1. The webpage contains a brief bio of you and your teammates at the top
