@@ -10,7 +10,7 @@ Set up git by following the instructions here: https://git-scm.com/book/en/v2/Ge
 
 Complete the following steps to actually use git for the class:
 1. Create a [github.com] account if you don't have one already.
-2. Follow the github classrooms link [https://classroom.github.com/a/7jZJcFH2] to associate your github username with the course, and it will create a repository for you. If you are working in a team, only one of your team members needs to do this.
+2. Follow the github classrooms link [https://classroom.github.com/a/uz3I-hsS] to associate your github username with the course, and it will create a repository for you. If you are working in a team, only one of your team members needs to do this.
 4. Make sure to add all of your team members as collaborators on the new repository.
 5. Running through these steps creates a ``repository'' a place where all of your project code will be stored.
 
@@ -24,14 +24,14 @@ If you haven't taken a class before that uses github classrooms, you will have t
 Use the command line interface to to ``clone'' the 
 repository you made above. You can cut and paste the repo url from the github web interface. DONT COPY AND PASTE BELOW, change the user name accordingly after you are done accepting the github classsroom assignment.
 ```
-$ git clone git@github.com:CMSC-13600-Data-Engineering/project-<your github username>.git app
+$ git clone git@github.com:CMSC-13600-Data-Engineering/project-<your github name>.git app
 ```
 Cloning creates a local copy of the code and you can now work on it!
 
 6. Step 5, will create a folder named "app" which will contain all of your code. You can test this out by running:
 ```
-(venv) $ cd app/
-(venv) $ git status
+ $ cd app/
+ $ git status
 On branch main
 Your branch is up to date with 'origin/main'.
 ```
@@ -50,23 +50,34 @@ $ git pull
 ```
 $ git checkout -b hw_0
 ```
-3. Read the project spec for the homework assignment (for this week it is https://github.com/sjyk/cmsc13600-course-project/blob/main/docs/Week-0-Installation.md). This will describe what you have to do and how you need to test it. 
+3. Read the project spec for the homework assignment (for this week it is https://github.com/sjyk/cmsc13600-course-project/blob/main/docs/HW-0-Git.md). This will describe what you have to do and how you need to test it. 
 
 4. Complete the assignment by following the directions in the spec. After you are done add all of the new files or modified files to the repo:
 ```
-(venv) $ git add <files go here>
+ $ git add <files go here>
 ```
 5. (TODO) For this assignment, I want you to create a file called `names.txt` with all of your project partners names listed in a text file separated by new lines. Create this file and:
 ```
-(venv) $ git add names.txt
+ $ git add names.txt
 ```
-5. Commit your changes, this creates a log of what you did. 
+6. Commit your changes, this creates a log of what you did. 
 ```
-(venv) $ git commit -m 'We added names to the repository'
+ $ git commit -m 'We added names to the repository'
 ```
-6. Push your changes
+7. Push your changes
 ```
-(venv) $ git push --set-upstream origin hw_0
+ $ git push --set-upstream origin hw_0
 ```
-7. After pushing your changes visit the repository in github. For example, mine is [https://github.com/CMSC-13600-Data-Engineering/week-0-setup-sjyk/] Replace sjyk with your github username. Click on "pull requests". [https://github.com/CMSC-13600-Data-Engineering/week-0-setup-sjyk/pulls]. Create a new pull request that compares your "week_i" branch to main. 
-8. Once you create a pull request you can link to it through a URL, e.g., [https://github.com/CMSC-13600-Data-Engineering/week-0-setup-sjyk/pull/2] Pull requests are what we grade, add any helpful text that might help us grade your submission. There will be a link on canvas to submit your pull request.
+8. After pushing your changes visit the repository in github. For example, mine is [https://github.com/CMSC-13600-Data-Engineering/project-sjyk] Replace sjyk with your github username. Click on "pull requests". [https://github.com/CMSC-13600-Data-Engineering/project-sjyk/pulls]. Create a new pull request that compares your "week_i" branch to main.
+   
+9. Once you create a pull request you can link to it through a URL, e.g., [https://github.com/CMSC-13600-Data-Engineering/project-sjyk/pulls/2] Pull requests are what we grade, add any helpful text that might help us grade your submission. There will be a link on canvas to submit your pull request.
+
+10. EVERY project partner must submit on Canvas even if you are working from the same repository.
+
+## Grading
+Test-driven development (TDD) is a software development process relying on software requirements being converted to test cases before software is fully developed, and tracking all software development by repeatedly testing the software against all test cases. Our grading policies will simulate test driven development. We will specify a series of tests that should pass with every assignment and you'll have to meet those criteria.
+
+1. Successfully added a file to the repository named `names.txt`
+2. Successfully created a pull request
+
+Full credit 2/2 tests passed, No credit else.
