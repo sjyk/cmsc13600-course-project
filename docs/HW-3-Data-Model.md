@@ -6,7 +6,7 @@ The relational data model is based on the principles of mathematical set theory 
 The main advantages of the relational data model are its simplicity, flexibility, and scalability. It allows for efficient storage and retrieval of large amounts of data and supports complex queries and transactions. The relational model is also widely used in industry and has become a standard for managing data in many applications, from simple spreadsheets to complex enterprise systems.
 
 ## Reading
-Before you begin, you should read up on Django Models [https://docs.djangoproject.com/en/4.1/topics/db/models/], and Django Model Forms [https://docs.djangoproject.com/en/4.1/topics/forms/modelforms/].
+Before you begin, you should read up on Django Models [https://docs.djangoproject.com/en/5.0/topics/db/models/], and Django Model Forms [https://docs.djangoproject.com/en/5.0/topics/forms/modelforms/].
 Django models define the basic data model which is then compiled to the database. Django Model Forms allow the front end to populate such a database.
 
 ## User Experience
@@ -32,7 +32,7 @@ Complete `models.py` with this data model. After completion run:
 ```
 This should run with no errors if your model is consistent. Like the diagrams discussed in class. Draw out your data model and save it to the docs folder in `app/docs/my-data-model.png`.
 
-5. Add, commit, and push models.py and app/docs/my-data-model.png.
+5. Add, commit, and push `models.py` and `app/docs/my-data-model.png`.
 
 ## Ask Chat-GPT to generate a data model (TODO)
 Chat-GPT can generate surprisingly good data models. Experiment with Chat-GPT to generate a data model. Use the text in this doc and the readme to generate a prompt. Ask it to do it as a django models.py file or as more abstract sql tables.
@@ -69,7 +69,7 @@ auth_user                   django_session
 auth_user_groups   
 ```
 ## Submission
-Follow the submission instructions of the previous weeks. There should be a pull request with: models.py, gpt.txt, my-data-model.png, gpt-model.png.
+Follow the submission instructions of the previous weeks. There should be a pull request with: `models.py`, `gpt.txt`, `my-data-model.png`, `gpt-model.png`.
 
 ## Grading
 1 pt for each of the 4 files that need to be included in the PR.
