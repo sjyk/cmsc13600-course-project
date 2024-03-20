@@ -10,7 +10,7 @@ Create a new folder to put all of your course files
 ```
 $ mkdir cmsc13600-materials
 ```
-Then inside the folder, create a virutal environment
+Then inside the folder, create a virtual environment
 ```
 $ cd cmsc13600-materials
 $ virtualenv venv
